@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* start header */
+.logo + i{
+    visibility: hidden;
+}
+.cover{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+}
+.parent::after{
+    content: "Holle in my first project";
+    position: absolute;
+    font-size: 100px;
+    top: calc(100% + 200px) ;
+    color: #eee;
+}
+.parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+.logo{
+    text-align: center;
+    padding: 5px;
+    background-color: #eee;
+    color: gray;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    position: relative;
+}
+header::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    background-color: #eee;
+    height: 2.5px;
+    top: calc(100% + 10px);
+}
+.menu{
+    display: flex;
+}
+.search{
+    display: flex;
+    position: relative;
+}
+header .search input{
+    background-color: transparent;
+    width: 150px;
+    border: none;
+    border-right: 2.5px solid #eee;
+    transition:border 0.5s ;
+}
+header .search input:focus{
+    outline: none;
+    border-radius: 15px;
+    border: 2.5px solid #eee;
+
+}
+header .search i{
+    position: absolute;
+    top: 50%;
+    left:calc(100% + 5px) ;
+    transform: translate(0,-50%);
+}
+header div ul{
+    display: flex;
+}
+header div ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+.active::before{
+    content: "";
+    background-color: black;
+    width: 39.11px;
+    height: 2.5px;
+    position: absolute;
+    top: calc(100% + 10px);
+    z-index: 2;
+}
+header a{
+    text-decoration: none;
+    color: #eee;
+}
+/* End header */
+/* Start Education */
+.parent_b{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    min-height: 100vh;
+    background-color: rgba(198, 137, 24, 0.484);
+}
+.parent_b::after{
+    content: "";
+    position: absolute;
+    background-color: skyblue;
+    width: 20%;
+    height: 100%;
+    z-index: -1;
+    left: 20%;
+    top: 100.5vh;
+}
+.parent_b::before{
+    content: "";
+    position: absolute;
+    background-color: skyblue;
+    width: 20%;
+    height: 100%;
+    z-index: -1;
+    right:  20%;
+    top: 100.5vh;
+}
+.Education{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,280px));
+    justify-content: space-between;
+    position: relative;
+}
+.Education::after{
+    content: "Education";
+    position: absolute;
+    font-size: 100px;
+    color: #eee;
+    left: 50%;
+    transform: translatex(-50%);
+    top: 0;
+}
+.Education::before{
+    content: "";
+    position: absolute;
+    height: 2.5px;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: black;
+    width: 405px;
+    top:100px ;
+}
+.Education div{
+    margin-top: 110px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+    max-height: 250px;
+}
+.Education div:hover{
+    transform: translate(5px,-5px);
+}
+.Education div p{
+    padding: 10px;
+}
+.Education div h3{
+    padding: 10px;
+}
+/* End Education */
+/* Start skills */
+.parent_c{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    min-height: 100vh;
+}
+.skills{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px,400px));
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.skills::after{
+    content: "Skills";
+    position: absolute;
+    font-size: 100px;
+    color: black;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    font-weight: bold;
+    opacity: 0.5;
+}
+.skills div{
+    background-color: black;
+    color: azure;
+    padding: 20px;
+    position: relative;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    margin-top: 80px;
+}
+.skills div:hover{
+    transform: translate(10px,-10px);
+}
+.skills .html::before{
+    content: "HTML";
+    position: absolute;
+    top: -20px;
+    color: black;
+    font-weight: bolder;font-size: larger;
+    border-bottom:5px solid #eee;
+}
+.skills .css::before{
+    content: "CSS";
+    position: absolute;
+    top: -20px;
+    color: black;
+    font-weight: bolder;font-size: larger;
+    border-bottom:5px solid #eee;
+}
+/* End skills */
+/* Srart Feedback */
+.parent_d{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Feedback{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+.Feedback span{
+    display: block;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+.Feedback input{
+    width: 70%;
+    border-radius: 30px;
+}
+.Feedback .feed input{
+    height: 200px;
+}
+.Feedback .feed span{
+    margin-left: 25px;
+
+}
+/* Start Abour */
+/* End Abour */
+.About{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+.About span{
+    margin-bottom: 50px;
+    font-weight: bolder;
+    font-size: larger;
+}
+/* End Feedback */
+/* Start phone */
+@media (max-width : 815px) {
+    header{
+        width: 99%;
+        overflow: hidden;
+    }
+    header ul{
+        visibility: hidden;
+
+    }
+    .logo + i{
+        padding-top: 5px;
+        visibility: visible;
+        position: absolute;
+        right: 10px;
+    }
+    .Education{
+        grid-template-columns: repeat(auto-fill,minmax(150px,490px));
+
+    }
+    .skills{
+        grid-template-columns: repeat(auto-fill,minmax(150px,490px));
+    }
+    .Feedback input{
+        width: 100%;
+    }
+    .Education div{
+        max-height: fit-content;
+    }
+}
+/* End phone */
