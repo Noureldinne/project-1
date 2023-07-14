@@ -266,6 +266,7 @@ header a{
     display: flex;
     flex-direction: column;
     padding: 100px;
+    overflow: hidden;
 }
 .About span{
     margin-bottom: 50px;
