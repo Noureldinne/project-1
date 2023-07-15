@@ -258,8 +258,9 @@ header a{
     margin-left: 25px;
 
 }
-/* Start Abour */
-/* End Abour */
+/* End Feedback */
+
+/* Start About */
 .About{
     width: 100%;
     height: 50vh;
@@ -275,7 +276,38 @@ header a{
     font-weight: bolder;
     font-size: larger;
 }
-/* End Feedback */
+/* End About */
+/* Start header phone */
+.parent_d + i{
+    float: left;
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+}
+.parent_d + i:hover ul{
+    visibility: visible;
+}
+.parent_d + i ul{
+    list-style: none;
+    padding: 0;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+.parent_d + i ul li{
+    border-bottom: 1px solid #eee;
+    padding: 5px;
+}
+.parent_d + i a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 10px;
+    font-family: sans-serif;
+
+}
+/* End header phone */
+
 /* Start phone */
 @media (max-width : 815px) {
     header{
@@ -286,10 +318,9 @@ header a{
         visibility: hidden;
 
     }
-    .logo + i{
+    .parent_d + i{
         padding-top: 5px;
         visibility: visible;
-        position: absolute;
         right: 10px;
     }
     .Education{
@@ -307,7 +338,7 @@ header a{
     }
 }
 /* End phone */
-/* Start big screen */
+/* Start large screen */
 @media (min-width: 1300px){
     .skills{
         grid-template-columns: repeat(2,1fr);
@@ -320,4 +351,4 @@ header a{
 
 
 }
-/* End big screen */
+/* End large screen */
