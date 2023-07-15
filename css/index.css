@@ -15,7 +15,7 @@ html{
     opacity: 0.9;
 }
 .parent::after{
-    content: "Holle in my first project";
+    content: "Hello in my first project";
     position: absolute;
     font-size: 100px;
     top: calc(100% + 200px) ;
@@ -176,6 +176,7 @@ header a{
     justify-content: center;
     padding-top: 10px;
     min-height: 100vh;
+    overflow: hidden;
 }
 .skills{
     width: 70%;
@@ -232,6 +233,7 @@ header a{
     padding-top: 10px;
     min-height: 100vh;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .Feedback{
@@ -265,7 +267,7 @@ header a{
     color: #eee;
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 50px;
     overflow: hidden;
 }
 .About span{
@@ -305,3 +307,17 @@ header a{
     }
 }
 /* End phone */
+/* Start big screen */
+@media (min-width: 1300px){
+    .skills{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 100px;
+    }
+    .Education{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 100px;
+    }
+
+
+}
+/* End big screen */
